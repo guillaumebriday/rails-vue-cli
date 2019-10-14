@@ -14,7 +14,7 @@
 !/tmp/.keep
 
 
-/public/assets
+/public
 .byebug_history
 
 app/views/application.html.erb
