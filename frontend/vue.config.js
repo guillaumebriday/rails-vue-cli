@@ -1,10 +1,10 @@
 module.exports = {
-  // proxy API requests to Valet during development
+  // proxy API requests to Rails during development
   devServer: {
     proxy: "http://localhost:3000"
   },
 
-  // output built static files to Laravel's public dir.
+  // output built static files to Rails's public dir.
   // note the "build" script in package.json needs to be modified as well.
   outputDir: "../public",
 
