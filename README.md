@@ -5,7 +5,7 @@
 
 - [Concept Overview](#concept-overview)
 - [Why?](#why)
-- [How it works?](#how-it-works)
+- [How it works](#how-it-works)
 - [Getting started](#getting-started)
   - [Install](#install)
   - [Development](#development)
@@ -24,7 +24,7 @@ It **does not** use the Rails gem [Webpacker](https://github.com/rails/webpacker
 
 Because sometime you want to use the power of Vue CLI and work with the "classic" Vue ecosystem.
 
-## How it works?
+## How it works
 
 Rails is only responsible for two things.
 
@@ -48,7 +48,7 @@ end
 ```
 
 It means that Rails will dispatch any requests to the `app/views/application.html.erb` view.
-The Vue router is responsible to handle that requests with the correct components after the first load of the page.
+The Vue router is responsible to handle those requests with the correct components after the first load of the page.
 
 For every API requests, we use the `:api` namespace to serve JSON in the same application that Vue CLI can use.
 
@@ -74,7 +74,7 @@ module.exports = {
 };
 ```
 
-We build the application in the Rails's public dir so it can be served your Web server on production.
+We build the application in the Rails's public dir so it can be served by your Web server on production.
 
 The `indexPath` is responsible to generate the `app/views/application.html.erb` that the `ApplicationController` will use.
 
@@ -114,10 +114,10 @@ Open [http://localhost:8080](http://localhost:8080) in your browser.
 
 ### Development
 
-Lints and fixes vue files:
+Lint and fix Vue files:
 ```bash
 $ cd frontend
-$ yarn lint
+$ yarn lint --fix
 ```
 
 Build the image locally :
