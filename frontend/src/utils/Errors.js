@@ -12,7 +12,7 @@ export default class Errors {
    * @param {string} field
    */
   has(field) {
-    return this.errors.hasOwnProperty(field);
+    return Object.hasOwnProperty.call(this.errors, field);
   }
 
   /**
