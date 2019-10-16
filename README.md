@@ -26,7 +26,7 @@ Because sometime you want to use the power of Vue CLI and work with the "classic
 
 ## How it works?
 
-Rails is responsible for two things only.
+Rails is only responsible for two things.
 
 1. Serve the first HTML page built with Vue CLI.
 2. Expose an API.
@@ -48,9 +48,9 @@ end
 ```
 
 It means that Rails will dispatch any requests to the `app/views/application.html.erb` view.
-The Vue router is responsible to handle that request with the correct component after the first load of the page.
+The Vue router is responsible to handle that requests with the correct components after the first load of the page.
 
-For every API requests, we use the `:api` namespace to serve json in the same application that Vue cli can use.
+For every API requests, we use the `:api` namespace to serve JSON in the same application that Vue CLI can use.
 
 In the `frontend/vue.config.js`:
 
@@ -80,7 +80,7 @@ The `indexPath` is responsible to generate the `app/views/application.html.erb` 
 
 In development, we now have two endpoints, `localhost:3000` for the api and `localhost:8080` for the Vue App.
 
-In production, it works exactly the same way as if you run `rails assets:precompile`.
+In production, it works exactly the same way as if you run `rails assets:precompile` but CSS and JS are precompiled by Vue CLI instead.
 
 ## Getting started
 
